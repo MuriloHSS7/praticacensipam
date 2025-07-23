@@ -18,7 +18,7 @@ connection.connect((err) => {
 });
 
 // Exemplo de consulta
-connection.query('SELECT * FROM usuarios' , (err, results) => {
+connection.query('SELECT * FROM usuario' , (err, results) => {
     if (err) {
         console.error('Erro na consulta:' , err);
         return;
