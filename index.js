@@ -1,11 +1,12 @@
+require('dotenv').config();
 const mysql = require('mysql2');
 
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection({
-    host: 'localhost', // host do servidor Mysql
-    user: 'root', // 'root'
-    password: 'Mm@225566', // senha do mysql
-    database: 'test_db' // Nome do banco de dados
+    host: process.env.DB_HOST, //'localhost', // host do servidor Mysql
+    user: process.env.DB_USER, // 'root', // 'root'
+    password: process.env.DB_PASSWORD, // 'Mm@225566', // senha do mysql
+    database: process.env.DB_NAME // 'test_db' // Nome do banco de dados
 });
 
 // Testar a conexão
