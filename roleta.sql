@@ -13,3 +13,16 @@ CREATE TABLE textos_roleta (
     texto VARCHAR(255),
     ativo BOOLEAN DEFAULT true
 );
+
+-- INSERINDO DADOS MANUALMENTE NA TABELA
+INSERT INTO usuario (id, nome, idade)
+VALUES (3, 'Miguel' , 16);
+
+-- EXCLUINDO DADOS MANUALMENTE DA TABELA
+DELETE FROM usuario
+WHERE id = 2;
+
+-- ALTERANDO DADOS MANUALMENTE DA TABELA
+UPDATE usuario
+SET id = 1
+WHERE id = 0;
